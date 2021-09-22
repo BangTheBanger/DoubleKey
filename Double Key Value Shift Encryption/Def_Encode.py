@@ -11,7 +11,8 @@ def encode(origin, message, masterkey, fkey, fakey):
         index = getkey(origin, x)
         index *= masterkey
         masterkey += fkey
-        print("i = " + str(index))
+        fkey += fakey
+        #print("i = " + str(index))
         reps = 0
         count += 1
         
@@ -21,8 +22,8 @@ def encode(origin, message, masterkey, fkey, fakey):
                 reps += 1
 
             else:
-                print("Character added = " + str(index) + " - " + origin[index])
-                print("Reps = " + str(reps))
+                #print("Character added = " + str(index) + " - " + origin[index])
+                #print("Reps = " + str(reps))
                 if (count == len(message)):
                     total_reps += str(reps)
                 else:

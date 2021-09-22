@@ -13,7 +13,7 @@ origin = {1: ' ', 2: '!', 3: '"', 4: '#', 5: '$', 6: '%', 7: '&', 8: "'", 9: '('
           81: 'p', 82: 'q', 83: 'r', 84: 's', 85: 't', 86: 'u', 87: 'v', 88: 'w', 89: 'x', 90: 'y',
           91: 'z', 92: '{', 93: '|', 94: '}', 95: '~'}
 
-code = encode(origin, "message", 5, 2, 10)
+code = encode(origin, "This is my message, I hope it's encrypted", 5, 2, 10)
 print("\nFinal ==" + code)
 print()
 decoded = decode(origin, code, 5, 2, 10)
